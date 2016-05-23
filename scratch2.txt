@@ -1,0 +1,15 @@
+twilliams  4/13/2016 4:40:24 PM
+refs #14700
+Factory & Guess CA - SPC Offer
+SpcCard moved to its own asembly and returned by coupon factory
+
+
+
+
+
+twilliams  4/29/2016 11:40:29 AM
+refs #4218
+GC: Redesign of US websites using responsive framework from EU
+sign in sign up pages revisions, PLP revisions, primary nav menu fix
+
+

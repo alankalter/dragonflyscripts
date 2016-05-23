@@ -1,0 +1,10 @@
+{
+    
+    "dynamics.bash.enabled": true,
+    "dynamics.css.enabled": false,
+    "dynamics.git.enabled": false,
+    "dynamics.html.enabled": false,
+    "dynamics.javascript.enabled": false,
+    "dynamics.python.enabled": false,
+    "system.base_path": "C:\\Natlink\\Natlink\\MacroSystem"
+}
