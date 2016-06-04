@@ -71,7 +71,11 @@ except ImportError:
 
 from dragonfly import *
 
-
+def define_countCorrect(text):
+    Text("function ").execute()
+    lib.format.camel_case_text(text)
+    Text("() {").execute()
+    Key("left:3").execute()
 #---------------------------------------------------------------------------
 # Here we globally defined the release action which releases all
 #  modifier-keys used within this grammar.  It is defined here

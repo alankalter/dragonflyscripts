@@ -28,6 +28,12 @@ rules = MappingRule(
 "step out": Key("s-f11"),
 "definition": Key("f12"),
 "references": Key("s-f12"),
+"find and replace" : Key("c-h"),
+"replace [<n>]" : Key("a-r:%(n)d"),
+"scroll": Key("down:30") + Key("up:30"),
+"scroll big": Key("down:50") + Key("up:50"),
+"scroll up": Key("up:30") + Key("down:30"),
+"scroll up big": Key("up:50") + Key("down:50"),
 # "search solution": Key("c-semicolon"),
       },
     extras = [

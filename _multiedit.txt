@@ -30,6 +30,10 @@ cmd.map = {
            "down [<n>]":                       Key("down:%(n)d"),
            "left [<n>]":                       Key("left:%(n)d"),
            "right [<n>]":                      Key("right:%(n)d"),
+		   "grab [<n>]" :                      Key("s-right:%(n)d"),
+		   "bark [<n>]" :                      Key("s-left:%(n)d"),
+		   "grab [<n>] (word | words)" :       Key("cs-right:%(n)d"),
+		   "bark [<n>] (word | words)" :       Key("cs-left:%(n)d"),
            "page up [<n>]":                    Key("pgup:%(n)d"),
            "page [<n>]":                       Key("pgdown:%(n)d"),
            "up <n> (page | pages)":            Key("pgup:%(n)d"),
@@ -38,15 +42,16 @@ cmd.map = {
            "right <n> (word | words)":         Key("c-right:%(n)d"),
            "head":                             Key("home"),
            "term":                             Key("end"),
-           "doc home":                         Key("c-home"),
+           "tippity":                          Key("c-home"),
            "doc end":                          Key("c-end"),
-
+		   "select to top" :                   Key("cs-home"),
            "spa [<n>]":                      release + Key("space:%(n)d"),
            "enter [<n>]":                      release + Key("enter:%(n)d"),
+		   "slap [<n>]":                      release + Key("enter:%(n)d"),
            
            "delete [<n>]":                     release + Key("del:%(n)d"),
            "delete [<n> | this] (line|lines)": release + Key("home, s-down:%(n)d, del"),
-           "select [<n> | this] (line|lines)": release + Key("home, s-down:%(n)d, s-end"),
+           "select [<n> | this] (line|lines)": release + Key("home, s-down:%(n)d, s-left"),
            "backspa [<n>]":                  release + Key("backspace:%(n)d"),
            "pop up":                           release + Key("apps"),
 
@@ -86,14 +91,14 @@ cmd.map = {
     "skinny arrow": Text(" ->") + noSpaceNoCaps,
     "triple equals"        : Text(" === "),
     "triple not equals"    : Text(" !== "),
-    "plus"                 : Key("space, plus, space"),
-    "minus"                : Key("space, minus, space"),
+    "plus"                 : Key("plus"),
+    "minus"                : Key("minus"),
     "equal"                : Key("space, equal, space"),
     "langle"                      : Key("langle"),
     "rangle"                      : Key("rangle"),
     "semicorn"                        : Text(";"),
       "commie"                      : Key("comma"),
-      "corn"                   : Key("space, colon, space"),
+      "corn"                   : Key("colon"),
     "punk"                        : Key("dot"),
     "zero"                        : Text("0"),
 	"Pat [<n>]"                         : release + Key("s-tab:%(n)d"),
@@ -101,9 +106,12 @@ cmd.map = {
 	"pat"                         : release + Key("s-tab"),
 	"question"                    : Key("question"),
 	"pound"                       : Key("hash"),
-	"at sign"                     : Key("at"),
+	"at sign"                     : Text("@"),
 	"dollar"                      : Key("dollar"),
-	
+	"percent"                     : Key("percent"),
+	"backslash"                   : Key("backslash"),
+	"for slash"                   : Key("slash"),
+	"underscore"                  : Key("underscore"),
 	"rest"                        : release + Key("s-end"),
 	"go way"                      : release + Key("a-space") + Key("n"),
 
@@ -178,10 +186,7 @@ cmd.map = {
                      "Zulu"     : Key("z"),
                      "zebra"    : Key("z"),
 					 
-					 "one"    : Key("1"),
-					 "two"    : Key("2"),
 					 
-					 "four"    : Key("1"),
 }					 
 
 #---------------------------------------------------------------------------

@@ -211,6 +211,7 @@ class FocusWinRule(CompoundRule):
                         % (self, window))
         for attempt in range(4):
             try:
+                Key("escape").execute()
                 window.set_foreground()
             except Exception, e:
                 self._log.warning("%s: set_foreground() failed: %s."
