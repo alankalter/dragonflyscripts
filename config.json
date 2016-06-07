@@ -3,5 +3,5 @@
     "aenea.path": null, 
     "dynamics.css": false, 
     "dynamics.html": false, 
-    "dynamics.javascript": true
+    "dynamics.javascript": false
 }

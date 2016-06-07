@@ -32,7 +32,8 @@ rules = MappingRule(
 	"logout of computer":  Key ("w-l"),
 	"crack": Key("s-f10")  + Key("down"),
 	"open file" : Key("c-o"),
-	"logout" : Mimic("press windows ell")
+	"logout" : Mimic("press windows ell"),
+
 	# svn
 	
 	}
